@@ -24,6 +24,18 @@ class User extends Authenticatable
         'is_admin'
     ];
 
+
+     public function articles()
+    {
+        return $this->hasMany(Article::class);
+    }
+
+    // Commentaires écrits par l'utilisateur
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
