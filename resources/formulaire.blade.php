@@ -1,0 +1,5 @@
+
+
+<x-formulaire :article="$article" />
+
+
